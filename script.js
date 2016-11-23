@@ -36,8 +36,6 @@ var planets = [
 		gravity: 0.6
 	},
 ];
-
-
 var userWeight;
 var finalWeight;
 var earthGravity = 9.8;
@@ -54,6 +52,5 @@ function calculateHandler() {
 
 function calculateWeight(planet){
 	var weight = userWeight * planet.gravity / earthGravity;
-	var li = '<li class="list-group-item">' + planet.planet + ': ' + weight.toFixed(2) + '</li>'
-	return li;
+	return '<li class="list-group-item">' + planet.planet + ': ' + weight.toFixed(2) + '</li>'
 }
